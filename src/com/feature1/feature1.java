@@ -7,21 +7,30 @@ public class feature1 {
         if (array == null) {
             throw new IllegalArgumentException("Input array cannot be null");
         }
-        Arrays.sort(array);
+        Arrays.sort(array); 
         return array;
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        //adding input
-        System.out.println("Enter the number of elements:");
-        int size = scanner.nextInt();
-        int[] numbers = new int[size];
-        System.out.println("Enter the elements:");
-        for (int i = 0; i < size; i++) {
-            numbers[i] = scanner.nextInt();
-        }
 
-        System.out.println("Sorted integers: " + Arrays.toString(sortIntegers(numbers)));
-        scanner.close();
+        try {
+            System.out.println("Enter the number of integers:");
+            int size = scanner.nextInt();
+
+            if (size <= 0) {
+                System.out.println("The array size must be greater than 0.");
+                return; 
+            }
+            int[] numbers = new int[size];
+            System.out.println("Enter the integers:");
+            for (int i = 0; i < size; i++) {
+                numbers[i] = scanner.nextInt();
+            }
+            System.out.println("Sorted integers: " + Arrays.toString(sortIntegers(numbers)));
+        } catch (Exception e) {
+            System.out.println("Error, Should Be Int");
+        } finally {
+            scanner.close();
+        }
     }
 }
