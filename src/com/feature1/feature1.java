@@ -28,7 +28,7 @@ public class feature1 {
             }
             System.out.println("Sorted integers: " + Arrays.toString(sortIntegers(numbers)));
         } catch (Exception e) {
-            System.out.println("Error, Should Be Int");
+            System.out.println("Error, The Input Should Be Int");
         } finally {
             scanner.close();
         }
