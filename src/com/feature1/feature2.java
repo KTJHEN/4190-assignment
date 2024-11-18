@@ -16,7 +16,7 @@ public class feature2 {
         int size = scanner.nextInt();
         scanner.nextLine(); 
         String[] strings = new String[size];
-        System.out.println("Enter the strings:");
+        System.out.println("Enter the strings:");// adding input and must be Strings
         for (int i = 0; i < size; i++) {
             strings[i] = scanner.nextLine();
         }
