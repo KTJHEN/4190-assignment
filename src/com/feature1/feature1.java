@@ -30,7 +30,7 @@ public class feature1 {
         } catch (Exception e) {
             System.out.println("Error, The Input Should Be Int");
         } finally {
-            scanner.close();
+            scanner.close();//close
         }
     }
 }
