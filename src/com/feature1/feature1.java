@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class feature1 {
     public static int[] sortIntegers(int[] array) {
-        if (array == null) {
+        if (array == null) { //https://www.geeksforgeeks.org/try-catch-throw-and-throws-in-java/
             throw new IllegalArgumentException("Input array cannot be null");
         }
         Arrays.sort(array); 
