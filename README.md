@@ -34,4 +34,4 @@ This repository contains the implementation of sorting features for arrays using
 2. GO Window - Show View - Git Repositories
 3. Right Click Git Repositories
 4. Select Clone a Git Repositories
-5. Enter a URL 
+5. Enter a URL https://github.com/KTJHEN/feature1.git
