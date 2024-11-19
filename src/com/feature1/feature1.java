@@ -18,7 +18,7 @@ public class feature1 {
             int size = scanner.nextInt();
 
             if (size <= 0) {
-                System.out.println("The array size must be greater than 0.");
+                System.out.println("The array size must be greater than 0.");// IF user enter the number is less than 0 will show this message
                 return; 
             }
             int[] numbers = new int[size];
@@ -28,7 +28,7 @@ public class feature1 {
             }
             System.out.println("Sorted integers: " + Arrays.toString(sortIntegers(numbers)));
         } catch (Exception e) {
-            System.out.println("Error, The Input Should Be Int");
+            System.out.println("Error, The Input Should Be Int");// If the User enter the number is not int, will show the error message
         } finally {
             scanner.close();//close
         }
